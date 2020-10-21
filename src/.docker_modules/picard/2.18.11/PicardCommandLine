@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+PRG="$(basename -- "$0")"
+case "$PRG" in
+picard-tools)
+        echo 1>&2 'Warning: picard-tools is deprecated and should be replaced by PicardCommandLine'
+        ;;
+PicardCommandLine)
+        ;;
+*)
+        set -- "$PRG" "$@"
+        ;;
+esac
+
+exec java -Xmx40g ${JAVA_OPTIONS-} -jar /usr/share/java/picard.jar "$@"
