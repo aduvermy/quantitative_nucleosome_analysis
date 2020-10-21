@@ -1,0 +1,42 @@
+[Formation BioComp] nextflow for experimental biologists
+
+Dear all,
+
+You registered for the nextflow formation which will take place this  afternoon starting at 13h30 in the room M7.1H04.
+
+Please check that you have an account on our gitlab server at the following url : 
+https://gitlab.biologie.ens-lyon.fr
+To connect, simply click on the CAS button.
+Your account is now linked to the gitlab server, but blocked
+You can send an email to laurent.modolo@ens-lyon.fr to activate your account.
+
+You will also need an account on the PSMN (http://www.ens-lyon.fr/PSMN/doku.php?id=contact:forms:inscription)
+
+If you want to work on your laptop, or plan to work remotely on your desktop via ssh (http://www.ens-lyon.fr/LBMC/intranet/services-communs/pole-bioinformatique/bioinfo_club/1_ssh_and_other_tools_to_work_remotly) you need to have the following software installed :
+- ssh
+- git
+- java (>=1.8)
+- docker
+
+Best,
+
+Dear all,
+
+You registered to the formation Git (12/12) or/and the formation Nextlflow (13/12) from 13:30 pm to 18pm in the in the room M7.1H04.
+
+Please check that you have an account on our gitlab server at the following url : 
+https://gitlab.biologie.ens-lyon.fr (only available from the ENS network)
+To connect, simply click on the CAS button.
+Your account is now linked to the gitlab server, but blocked
+You can send an email to laurent.modolo@ens-lyon.fr to activate your account.
+
+You will also need an account on the PSMN (http://www.ens-lyon.fr/PSMN/doku.php?id=contact:forms:inscription) (don’t wait until the 12 to request an account !)
+
+If you want to work on your laptop, or plan to work remotely on your desktop via ssh (http://www.ens-lyon.fr/LBMC/intranet/services-communs/pole-bioinformatique/bioinfo_club/1_ssh_and_other_tools_to_work_remotly) you need to have the following software installed :
+- ssh
+- git
+- java (>=1.8) (for the nextflow formation)
+- docker (for the nextflow formation)
+Otherwise, you will need to request an account to use the computer in the room (http://www.cbp.ens-lyon.fr/doku.php?id=contact:compte)
+
+Best,

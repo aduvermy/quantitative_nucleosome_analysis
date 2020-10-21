@@ -1,0 +1,31 @@
+#! /usr/local/bin/bash -l
+#####################################
+# job script example with GE options
+#####################################
+#$ -q demon
+#$ -l demon=1
+#$ -P P_lbmc
+#$ -N nf_pipe
+#$ -o /sps/lbmc/lmodolo/logs/ # change to your username !
+#$ -e /sps/lbmc/lmodolo/logs/ # change to your username !
+#$ -r n       # relaunch y/n
+#$ -M laurent.modolo@ens-lyon.fr # change to your mail !
+#$ -m be      ## send an email when the job starts and ends
+#$ -l os=cl7  ## choose OS
+#$ -l sps=1   ## acces /sps directory
+#####################################
+
+NF_VERSION=19.10
+NF=/pbs/throng/lbmc/cl7/nextflow/${NF_VERSION}/nextflow
+# change to your username
+SCRATCH=/sps/lbmc/lmodolo/
+# change to your project / pipeline !
+PIPELINE=${SCRATCH}/nextflow/src/training_dataset.nf
+# change to your project / pipeline !
+CONFIG=${SCRATCH}/nextflow/src/training_dataset.config
+
+${NF} ${PIPELINE} -c ${CONFIG} -profile ccin2p3 \
+--fasta "${SCRATCH}/nextflow/data/tiny_dataset/fasta/tiny_v2.fasta" \
+--fastq_single "${SCRATCH}/nextflow/data/tiny_dataset/fastq/tiny2_S.fastq.gz" \
+--chromosome "X" --start 5305683 --stop 5333928 -resume \
+-w "${SCRATCH}"
